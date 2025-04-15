@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1744632439674,
+    "title": "project meeting",
+    "description": "meeting of the project",
+    "date": "2025-04-16",
+    "organizer": "stuti",
+    "approved": true,
+    "attendees": [
+      "arunima"
+    ]
+  },
+  {
+    "id": 1744632704967,
+    "title": "pro",
+    "description": "project",
+    "date": "2025-04-18",
+    "organizer": "stuti",
+    "approved": true,
+    "attendees": []
+  },
+  {
+    "id": 1744632767160,
+    "title": "proos",
+    "description": "o",
+    "date": "2025-04-17",
+    "organizer": "stuti",
+    "approved": false,
+    "attendees": []
+  }
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickEvent - Local Event Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">QuickEvent</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#create">Create Event</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1 class="animate-pop-in">Welcome to QuickEvent</h1>
+      <p class="animate-pop-in">Your Local Event Management Solution</p>
+    </section>
+
+    <section id="create" class="form-section">
+      <h2 class="section-title">Create a New Event</h2>
+      <form id="eventForm" class="animate-slide-up">
+        <input type="text" id="title" placeholder="Event Title" required>
+        <input type="text" id="organizer" placeholder="Organizer Name" required>
+        <input type="date" id="date" required>
+        <textarea id="description" placeholder="Event Description" required></textarea>
+        <button type="submit">Submit Event</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+
+    <section id="events" class="event-section">
+      <h2 class="section-title">Upcoming Events</h2>
+      <div id="eventsList" class="events-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 QuickEvent. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

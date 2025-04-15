@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Login | QuickEvent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 Admin Login</h2>
+    <form id="adminLoginForm">
+      <input type="password" id="adminPass" placeholder="Enter Admin Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginMsg"></p>
+  </div>
+  <script>
+    document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const pass = document.getElementById('adminPass').value;
+      if (pass === 'admin123') {
+        localStorage.setItem('admin', 'true');
+        window.location.href = 'admin.html';
+      } else {
+        document.getElementById('loginMsg').textContent = 'Incorrect password.';
+      }
+    });
+  </script>
+</body

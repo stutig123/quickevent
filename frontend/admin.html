@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | QuickEvent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛠️ Admin Panel - Approve Events</h1>
+    <div id="loginSection">
+      <h2>Admin Login</h2>
+      <form id="adminLoginForm">
+        <input type="password" id="adminPass" placeholder="Enter Admin Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginMsg"></p>
+    </div>
+    <div id="adminSection" style="display: none;">
+      <div id="adminEvents"></div>
+    </div>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
